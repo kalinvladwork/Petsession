@@ -1,0 +1,62 @@
+:root {
+  --step: 8px;
+
+  --base-color: #000000;
+  --second-color: #ffffff;
+  --primary-color: #0BBBEF;
+  --neutral-color: #F2F9FE;
+  --neutral-darker-color: #E8F4FC;
+  --accent-color: #F7A600;
+  --accent-active-color: #FCB82D;
+  --header-color: var(--neutral-color);
+
+  --header-height: 85px;
+
+  --u-h1-font-size: 30px;
+  --u-h2-font-size: 30px;
+  --u-h3-font-size: 20px;
+  --u-h4-font-size: 14px;
+  --font-size: 16px;
+
+  --p-margin-bottom: 15px;
+
+  @media (min-width: 576px) {
+    --u-h1-font-size: 45px;
+    --u-h2-font-size: 25px;
+    --u-h3-font-size: 20px;
+    --u-h4-font-size: 16px;
+    --font-size: 18px;
+  }
+
+  @media (min-width: 992px) {
+    --header-height: 110px;
+
+    --u-h1-font-size: 50px;
+    --u-h2-font-size: 40px;
+    --u-h3-font-size: 28px;
+    --u-h4-font-size: 18px;
+    --font-size: 20px;
+
+    --p-margin-bottom: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    --header-height: 130px;
+
+    --u-h1-font-size: 50px;
+    --u-h2-font-size: 40px;
+    --u-h3-font-size: 28px;
+    --u-h4-font-size: 18px;
+    --font-size: 20px;
+  }
+
+  @media (min-width: 1400px) {
+    --header-height: 164px;
+
+    --u-h1-font-size: 55px;
+    --u-h2-font-size: 50px;
+    --u-h3-font-size: 35px;
+    --u-h4-font-size: 24px;
+    --font-size: 24px;
+  }
+}

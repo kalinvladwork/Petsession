@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: var(--step);
+  height: 100%;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--neutral-color);
+  color: var(--base-color);
+  height: 100%;
+  width: calc(100% - 12px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: var(--primary-color);
+  transition: all 0.2s;
+
+  &:hover, &:active {
+    color: var(--accent-active-color);
+  }
+}
+
+p {
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0;
+  margin-bottom: var(--p-margin-bottom);
+}
+
+section {
+  padding: 15px;
+}
+
+textarea {
+  height: 130px;
+}

@@ -1,0 +1,117 @@
+.burger {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: transparent;
+    z-index: 10;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s, bottom 0.2s 0.2s, top 0.2s 0.2s, transform 0.2s 0.2s;
+}
+
+.burger.is-active span:nth-child(1) {
+    top: calc(50% - 1px);
+    transform: rotate(3645deg);
+    transform-origin: center;
+}
+
+span:nth-child(2) {
+    top: calc(50% - 1px);
+}
+
+.burger.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+
+span:nth-child(3) {
+    top: unset;
+    bottom: 0;
+}
+
+.burger.is-active span:nth-child(3) {
+    bottom: calc(50% - 1px);
+    transform: rotate(-3645deg);
+    transform-origin: center;
+}
+
+.header-navigation {
+    display: none;
+    margin-left: 40px;
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 70px;
+    }
+
+    @media (min-width: 1400px) {
+        margin-left: 140px;
+    }
+}
+
+.burger-menu {
+    display: block;
+    width: 0;
+    height: 110vh;
+    margin: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: var(--second-color);
+    overflow: hidden;
+    transition: width 0.5s;
+    padding: 120px 0 0;
+
+    .burger-nav-item {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    &.is-open {
+        width: 100%;
+        overflow: visible;
+
+        .burger-nav-item {
+            opacity: 1;
+        }
+    }
+}
+
+.burger-header-navigation {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0 15px;
+
+    .nav-item {
+        margin-bottom: 12px;
+    }
+
+    .button {
+        width: 90%;
+        margin: 50px 0 0;
+        align-self: center;
+    }
+}
