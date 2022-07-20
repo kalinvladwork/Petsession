@@ -1,7 +1,5 @@
 # Petsession
 
-srcset в имейджи
-
 * {
   font-family: 'Inter', sans-serif;
   font-family: 'Nunito', sans-serif;
